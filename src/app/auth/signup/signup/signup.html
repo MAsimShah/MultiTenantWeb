@@ -1,0 +1,31 @@
+<div class="signup-card">
+  <h2>Sign Up</h2>
+
+  <form (ngSubmit)="submit()">
+    <input
+      type="text"
+      placeholder="Full Name"
+      name="name"
+      [(ngModel)]="model.name"
+      required
+    />
+
+    <input
+      type="email"
+      placeholder="Email"
+      name="email"
+      [(ngModel)]="model.email"
+      required
+    />
+
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      [(ngModel)]="model.password"
+      required
+    />
+
+    <button type="submit">Create Account</button>
+  </form>
+</div>
